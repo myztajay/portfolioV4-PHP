@@ -139,7 +139,7 @@ a {
 }
 
 a:visited {
-	color: purple;
+	color: #fff;
 }
 
 a:hover, a:focus, a:active {
@@ -462,6 +462,8 @@ object {
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
+ 
+
 html,
 body {
   width: 100%;
@@ -579,9 +581,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #2c3e50;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #2c3e50, #7f8c8d);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #2c3e50, #7f8c8d); }
+  background: url("/wp-content/themes/rafaelportfolio/assets/img/bg-pattern.png"), #2c3e50;
+  background: url("/wp-content/themes/rafaelportfolio/assets/img/bg-pattern.png"), -webkit-linear-gradient(to left, #2c3e50, #7f8c8d);
+  background: url("/wp-content/themes/rafaelportfolio/assets/img/bg-pattern.png"), linear-gradient(to left, #2c3e50, #7f8c8d); }
   header.masthead .header-content {
     max-width: 500px;
     margin-bottom: 100px;
@@ -666,7 +668,7 @@ section.features .feature-item {
 section.cta {
   position: relative;
   padding: 150px 0;
-  background-image: url("../img/city.jpeg");
+  background-image: url("/wp-content/themes/rafaelportfolio/assets/img/city.jpeg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

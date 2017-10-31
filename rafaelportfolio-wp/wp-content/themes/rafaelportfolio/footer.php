@@ -11,24 +11,26 @@
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rafaelportfolio' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'rafaelportfolio' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'rafaelportfolio' ), 'rafaelportfolio', '<a href="http://RafaelFernandez.me">Rafael Fernandez</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2017 Rafael Fernandez. All Rights Reserved.</p>
+    <p>Providence, RI, 401-369-1072</p>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="<?php bloginfo('template_directory')?>/assets/vendor/jquery/jquery.min.js"></script>
+<script src="<?php bloginfo('template_directory')?>/assets/vendor/popper/popper.min.js"></script>
+<script src="<?php bloginfo('template_directory')?>/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="<?php bloginfo('template_directory')?>/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="<?php bloginfo('template_directory')?>/js/new-age.js"></script>
 
 </body>
 </html>
