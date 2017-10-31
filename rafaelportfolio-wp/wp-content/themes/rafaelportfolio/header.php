@@ -50,27 +50,17 @@
         Menu
         <i class="fa fa-bars"></i>
       </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
       <?php 
         wp_nav_menu( array(
           'theme_location'  => 'primary', 
           'container'       => 'nav',
           'container_class' => 'navbar-collapse collapse',
-          'menu_class'      => 'nav navbar-nav navbar-right'
+          'menu_class'      => 'navbar-nav ml-auto',
+          'menu-item'       => 'nav-item'
         ) );
        ?>
+      </div> 
     </div>
   </nav>
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-lg-10 my-auto mx-auto text-center">
-          <div class="header-content mx-auto ">
-            <h2 class="bold-fonts">FULL STACK DEVELOPER</h1>
-            <h3 class="mb-5"> I specialize in making modern, responsive web applications & websites. </h1>
-          </div>
-          <a href="#hire-me"type="button" class="btn btn-xl btn-primary js-scroll-trigger ">I want to build a Webapp/Website</a>
-          <a href="#about" class="btn btn-outline btn-xl js-scroll-trigger ">I am an employer looking to hire</a>
-        </div>  
-      </div>
-    </div>
-  </header>
+
