@@ -52,12 +52,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
       <?php 
+        
+        // This is what is adding classes to anchor tags
+        function add_link_atts($atts) {
+          $atts['class'] = "nav-link js-scroll-trigger";
+          return $atts;
+        }
+        add_filter( 'nav_menu_link_attributes', 'add_link_atts');
+        
         wp_nav_menu( array(
-          'theme_location'  => 'primary', 
-          'container'       => 'nav',
-          'container_class' => 'navbar-collapse collapse',
+          'theme_location'  => 'menu-1',       
+          'container_class' => 'navbar-collapse collapse',  
+          'container'       => 'div',
+          'menu'            => 'primary',
           'menu_class'      => 'navbar-nav ml-auto',
-          'menu-item'       => 'nav-item'
+          'menu-item'       => 'nav-item',      
         ) );
        ?>
       </div> 

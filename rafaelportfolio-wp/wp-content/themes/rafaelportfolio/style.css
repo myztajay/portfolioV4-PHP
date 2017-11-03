@@ -455,7 +455,7 @@ object {
 /* Theme specific style*/
 
 .logged-in nav {
-  top:40px;
+  top:25px;
 }
 
 dl, ol, ul {
