@@ -139,7 +139,10 @@ a {
 }
 
 a:visited {
-	color: #fff;
+	color: black;
+}
+a:visited.btn-outline{
+  color:white;
 }
 
 a:hover, a:focus, a:active {
@@ -456,6 +459,11 @@ object {
 
 .logged-in nav {
   top:25px;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(253, 204, 82, .25);
 }
 
 dl, ol, ul {
@@ -790,7 +798,7 @@ footer {
 
 .btn-primary, .btn-primary:hover{
   background-color: #fdcc52;
-  border-color: white;
+  border-color: rgba(0, 0, 0, 0.65);
   color: black;
 }
 
@@ -831,7 +839,7 @@ a:focus {
 }
 
 .btn-primary:focus {
-    box-shadow: 0 0 0 3px rgba(255, 219, 77,.5);
+    box-shadow: 0 0 0 1px rgba(255, 219, 77,.5);
 }
   
 .grow {
@@ -912,4 +920,67 @@ a:focus {
     }
 }
 
+/*CONTATACT FORM STYLING*/
+.wpcf7-mail-sent-ok {
+	border: 2px solid #5cff59;
+}
 
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff4747;
+	color: white;
+}
+
+.wpcf7-spam-blocked {
+	border: 2px solid blue;
+}
+
+div.wpcf7-validation-errors {
+	border: 2px solid #fdcc52;
+  color:white;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	color: white;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid blue;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border: none; 
+  border-color: none;
+  border-radius: none;
+  background: #fdcc52;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: .25rem;
+  transition: all .15s ease-in-out;
+}

@@ -25,8 +25,8 @@ get_header(); ?>
           <h2 class="bold-fonts">FULL STACK DEVELOPER</h1>
           <h3 class="mb-5"> I specialize in making modern, responsive web applications & websites. </h1>
         </div>
-        <a href="#hire-me"type="button" class="btn btn-xl btn-primary js-scroll-trigger ">I want to build a Webapp/Website</a>
-        <a href="#about" class="btn btn-outline btn-xl js-scroll-trigger ">I am an employer looking to hire</a>
+        <a href="#hire-me" class="btn btn-xl btn-primary js-scroll-trigger ">I want to build a Webapp/Website</a>
+        <a href="#about"   class="btn btn-xl btn-outline js-scroll-trigger ">I am an employer looking to hire</a>
       </div>  
     </div>
   </div>
@@ -379,21 +379,11 @@ get_header(); ?>
         <div class="col-md-5 mx-auto">
           <h2>Stop waiting.<br>Start building.</h2>
         </div>
-        <!-- <div class="col-md-4 mx-auto">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1"></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <input type="name" class="form-control" id="" placeholder="Email">
-            </div>
-            <div class="form-group">  
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
-            </div>  
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div> -->
+        <div class="col-md-4 mx-auto">
+            <?php get_template_part( 'partials/contact-form', 'page' ); ?>
+        </div>
+        
+    
       </div>
     </div>
   </div>
